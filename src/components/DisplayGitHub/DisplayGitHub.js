@@ -9,7 +9,7 @@ const DisplayGitHub = () => {
   useEffect(() => {
     async function fetchGitHubData() {
       try {
-        const response = await fetch(`https://api.github.com/users/${username}/repos`);
+        const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
         if (!response.ok) {
           throw new Error('Failed to fetch GitHub repositories');
         }
@@ -23,7 +23,7 @@ const DisplayGitHub = () => {
     }
 
     fetchGitHubData();
-  }, []);
+  }, [username]);
 
   if (loading) {
     return <p className="text-gray-600">Loading...</p>;
@@ -34,10 +34,10 @@ const DisplayGitHub = () => {
   }
 
   return (
-    <div>
+    <div className="container border-2 w-80 rounded-md mx-auto">
     <h2 className="text-xl font-semibold mb-4">Public Repositories</h2>
     {repos.length > 5 ? (
-      <div>
+      <div className="container border-black rounded-md py-1">
         <p className="text-gray text-sm">
         {new Date(repos[5].created_at).toLocaleDateString(undefined, {
           year: 'numeric',
@@ -59,7 +59,7 @@ const DisplayGitHub = () => {
     ) : (
       <p>No data available at index 5.</p>
     )}
-    <div>
+    <div className="container py-4">
     {repos.length > 6 ? (
       <div>
         <p className="text-gray text-sm">
@@ -81,7 +81,32 @@ const DisplayGitHub = () => {
       </a>
       </div>
     ) : (
-      <p>No data available at index 5.</p>
+      <p>No data available at index 6.</p>
+    )}
+    </div>
+    <div>
+    {repos.length > 1 ? (
+      <div>
+        <p className="text-gray text-sm">
+        {new Date(repos[1].created_at).toLocaleDateString(undefined, {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        })}
+      </p>
+        <strong className="block text-blue-600">{repos[1].name}</strong>
+        <p className="text-gray-500">Language: {repos[1].language || 'N/A'}</p>
+        <a
+        href={repos[1].html_url} // Add the GitHub repository URL here
+        target="_blank" // Open the link in a new tab
+        rel="noopener noreferrer" // Add recommended security attributes for external links
+        className="block text-blue-600 hover:underline"
+      >
+        Visit Repository
+      </a>
+      </div>
+    ) : (
+      <p>No data available at index 38.</p>
     )}
     </div>
   </div>

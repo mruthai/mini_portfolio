@@ -3,11 +3,3 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-font-sans {
-  font-family: work-sans,
-    sans-serif;
-}
-
-font-serif {
-  font-family: lora, ;
-}
