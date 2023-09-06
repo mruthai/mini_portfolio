@@ -1,6 +1,7 @@
 import React from 'react'
 import 'tailwindcss/tailwind.css';
 import NavBar from '../components/NavBar/NavBar';
+import Footer from '../components/Footer/Footer'
 
 const Project = () => {
   return (
@@ -11,6 +12,10 @@ const Project = () => {
       <div>
       <h1 className="text-3xl font-semibold mb-4">Current Developement</h1>
       </div>
+      <div>
+
+      </div>
+      <Footer />
     </div>
   )
 }
