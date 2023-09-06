@@ -1,9 +1,17 @@
 import React from 'react'
 import 'tailwindcss/tailwind.css';
+import NavBar from '../components/NavBar/NavBar';
 
 const Project = () => {
   return (
-    <div>Project</div>
+    <div className="container mx-auto p-4">
+      <div>
+      <NavBar />
+      </div>
+      <div>
+      <h1 className="text-3xl font-semibold mb-4">Current Developement</h1>
+      </div>
+    </div>
   )
 }
 

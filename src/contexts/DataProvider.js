@@ -6,7 +6,7 @@ const DataProvider = ({ children }) => {
   const [githubData, setGithubData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [username] = useState('mruthai')
+  const username = 'mruthai'
 
 useEffect(() => {
   const fetchGitHubData = async () => {
