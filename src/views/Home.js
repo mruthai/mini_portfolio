@@ -4,6 +4,8 @@ import DataProvider from '../contexts/DataProvider';
 import NavBar from '../components/NavBar/NavBar';
 import Footer from '../components/Footer/Footer';
 import Credentials from '../components/Credentials/Credentials';
+import HeadShot from '../components/HeadShot/HeadShot';
+import images from '../constants/images';
 import 'tailwindcss/tailwind.css';
 
 const Home = () => {
@@ -16,6 +18,12 @@ const Home = () => {
       <div className="mb-10 mt-5">
         <NavBar />
       </div>
+      <HeadShot
+        src={images.headshot} // Adjust the image path
+        alt="My Headshot"
+        width="200" // Adjust the width
+        height="200" // Adjust the height
+      />
       <div className="mx-10 mb-5 sm:w-2/3 md:w-1/5 lg:w-2/5 pl-10">
         <h1 className=" text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold mb-4">Full stack software developer</h1>
         <p className="mb-4 pr-10 lg:ml-auto">
