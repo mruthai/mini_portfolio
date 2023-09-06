@@ -1,5 +1,4 @@
-// context/DataProvider.js
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const DataContext = createContext();
 
@@ -9,6 +8,7 @@ const DataProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [username] = useState('mruthai')
 
+useEffect(() => {
   const fetchGitHubData = async () => {
     try {
       const response = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`);
@@ -24,11 +24,14 @@ const DataProvider = ({ children }) => {
       setError(err);
       setLoading(false);
     }
-  };
-  console.log(fetchGitHubData)
+  }
+  fetchGitHubData();
+
+}, [])
+  
 
   return (
-    <DataContext.Provider value={{ githubData, loading, error, fetchGitHubData }}>
+    <DataContext.Provider value={{ githubData, loading, error, }}>
       {children}
     </DataContext.Provider>
   );
