@@ -6,12 +6,12 @@ import Footer from '../components/Footer/Footer'
 
 const Project = () => {
   return (
-    <div className="container mx-auto p-4">
-      <div>
+    <div className="bg-slate-50">
+      <div className="bg-slate-100">
       <NavBar />
       </div>
       <div>
-      <h1 className="text-3xl font-semibold mb-4">Current Developements</h1>
+      <h1 className="font-serif ml-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">Current Developements</h1>
       </div>
       <div>
         <Section1 />

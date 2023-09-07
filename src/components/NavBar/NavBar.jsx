@@ -9,30 +9,37 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-#f1f1f1 p-4">
-      <div className="container mx-auto">
-        <div className="flex justify-between items-center">
-          <Link to="/" className="text-white font-semibold text-lg"> </Link>
-          <button
-            className="md:hidden text-#0a0a0a hover:text-blue-700"
-            onClick={toggleMenu}>
-            {menuOpen ? 'Close' : 'Menu'}
-          </button>
-        </div>
-        <ul
-          className={`${menuOpen ? 'block' : 'hidden'} md:flex flex-col md:flex-row justify-center justfiy-content space-y-4 md:space-y-0 md:space-x-4 mt-4 md:mt-0`}>
-          <li className="text-#0a0a0a hover:text-blue-700">
-            <Link to="/">Home</Link>
-          </li>
-          {/* <li className="text-#0a0a0a hover:text-blue-700">
-            <Link to="/about">About</Link>
-          </li> */}
-          <li className="text-#0a0a0a hover:text-blue-700">
-            <Link to="/project">Projects</Link>
-          </li>
-        </ul>
+<nav className={`py-5 h-24 p-4 ${menuOpen ? 'bg-white' : ''}`}>
+  <div>
+    <div className="flex justify-between items-center">
+      <button
+        className="md:hidden text-#0a0a0a hover:text-blue-700"
+        onClick={toggleMenu}
+      >
+        {menuOpen ? 'Close' : 'Menu'}
+      </button>
+    </div>
+    <div
+      className={`${
+        menuOpen
+          ? 'flex justify-evenly items-center' // Center the divs
+          : 'hidden'
+      } md:flex flex-row justify-center justfiy-content  md:space-y-0 md:space-x-4 mt-1 md:mt-0`}
+    >
+      <div className="text-#0a0a0a hover:text-blue-700">
+        <Link to="/">Home</Link>
       </div>
-    </nav>
+      {/* <li className="text-#0a0a0a hover:text-blue-700">
+        <Link to="/about">About</Link>
+      </li> */}
+      <div className="text-#0a0a0a hover:text-blue-700">
+        <Link to="/project">Projects</Link>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
   );
 };
 

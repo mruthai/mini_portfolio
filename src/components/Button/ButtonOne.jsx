@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button_1 = ({url, buttonText}) => {
+const ButtonOne = ({url, buttonText}) => {
     const handleClick = () => {
         window.open(url, '_blank'); // Open the specified URL in a new window/tab
       };
@@ -14,4 +14,4 @@ const Button_1 = ({url, buttonText}) => {
       );
     };
 
-export default Button_1
+export default ButtonOne

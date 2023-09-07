@@ -1,15 +1,14 @@
 import React from 'react'
 
-const HeadShot = ({ src, alt, width, height }) => {
+const HeadShot = ({ src, alt }) => {
   return (
-    <div className="">
+    <div >
       
       <img
       src={src}
       alt={alt}
-      width={width}
-      height={height}
-      className="rounded-full"
+      className="relative mx-10 w-36 h-30 overflow-hidden rounded-lg"
+      
     />
 
 

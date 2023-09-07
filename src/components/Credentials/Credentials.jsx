@@ -19,7 +19,7 @@ const Credentials = () => {
     return (
         <div className="container mx-auto px-4 sm:w-2/3 md:w-1/2 lg:w-2/5 border-2 border-slate-200 rounded-md">
             <div className="mt-5">
-                <strong className="block text-gray-950 text-2xl mb-4">
+                <strong className="font-serif text-xl underline decoration-yellow-500 font-bold mb-4">
                     📐 Work History
                 </strong>
             </div>

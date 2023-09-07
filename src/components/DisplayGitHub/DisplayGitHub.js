@@ -15,7 +15,7 @@ const DisplayGitHub = () => {
     return (
         <div className=" px-4 sm:w-2/3 md:w-1/2 lg:w-2/5 border-2 border-slate-200 rounded-md">
             <div className="mt-5">
-                <h2 className="text-xl underline decoration-yellow-500 font-semibold mb-4">GitHub Public Repositories</h2>
+                <h2 className="font-serif text-xl underline decoration-yellow-500 font-semibold mb-4">GitHub Public Repositories</h2>
             </div>
             <div className="my-5">
                 <p>In this section, you'll find a mixture of respositories to showcase my skills that I have learned on my own and software development boot camp.</p>
