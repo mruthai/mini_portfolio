@@ -18,7 +18,7 @@ const DisplayGitHub = () => {
                 <h2 className="font-serif text-xl underline decoration-yellow-500 font-semibold mb-4">GitHub Public Repositories</h2>
             </div>
             <div className="my-5">
-                <p>In this section, you'll find a mixture of respositories to showcase my skills that I have learned on my own and software development boot camp.</p>
+                <p>In this section, several of my GitHub repositories showcase the skills I have learned and Coding Temple's software development boot camp- including how to access data through an API. The information below, the title, the date, the language used, and the repository link are from GitHub's API. </p>
             </div>
             {githubData.length > 5 ? (
                 <div className="container py-10 ">
@@ -60,7 +60,7 @@ const DisplayGitHub = () => {
                         <strong className="block text-gray-950 text-lg">{githubData[6].name}</strong>
                         <p>
                         I built a Django Jewelry application to understand better how this Python framework is structured. 
-                        The goal was to learn more about Django and apply that knowledge to assist with developing a custom ERP for a future client. 
+                        The goal was to learn more about Django and apply that knowledge to assist with developing a custom ERP for a potential client. 
                         </p>
                         <p className="text-gray-500 mt-4">Language Used: {githubData[6].language || 'N/A'}</p>
                         <a
