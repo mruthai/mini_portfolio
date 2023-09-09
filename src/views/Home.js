@@ -36,10 +36,10 @@ const Home = () => {
         <TechStack />
       </div>
       <div className="flex flex-col justify-between p-5 sm:flex-row  sm:justify-evenly space-y-5 sm:space-y-0 sm:space-x-10">
+        <Credentials />
         <DataProvider>
           <DisplayGitHub />
         </DataProvider>
-        <Credentials />
       </div>
       <Footer />
     </div>
