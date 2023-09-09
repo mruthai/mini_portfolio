@@ -9,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-<nav className={`py-5 h-24 p-4 ${menuOpen ? 'bg-white' : ''}`}>
+<nav className={`py-5  p-5 ${menuOpen ? 'bg-white' : ''}`}>
   <div>
     <div className="flex justify-between items-center">
       <button

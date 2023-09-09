@@ -1,4 +1,5 @@
 import React from 'react'
+import { GoBriefcase } from 'react-icons/go'
 
 const Credentials = () => {
     const onButtonClick = () => {
@@ -18,9 +19,9 @@ const Credentials = () => {
 
     return (
         <div className="container mx-auto px-4 sm:w-2/3 md:w-1/2 lg:w-2/5 border-2 border-slate-200 rounded-md">
-            <div className="mt-5">
-                <strong className="font-serif text-xl underline decoration-yellow-500 font-bold mb-4">
-                    📐 Work History
+            <div className="mt-5 ">
+                <strong className="font-serif text-xl underline decoration-yellow-500 font-bold mb-4 flex flex-row gap-6">
+                < GoBriefcase /> Work History
                 </strong>
             </div>
             <div className="mt-8 space-y-6">
@@ -61,7 +62,7 @@ const Credentials = () => {
                 </div>
             </div>
             <div className="my-5">
-            <button className="rounded-full bg-blue-500 text-white py-3 px-6 rounded-md" onClick={onButtonClick}>
+            <button className="rounded-md bg-blue-500 text-white py-3 px-6 " onClick={onButtonClick}>
                     Download Resumé
                 </button>
             </div>

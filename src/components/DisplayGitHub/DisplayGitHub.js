@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { DataContext } from '../../contexts/DataProvider';
+import { DiGithubBadge } from 'react-icons/di'
 
 const DisplayGitHub = () => {
     const { githubData, loading, error } = useContext(DataContext);
@@ -14,7 +15,8 @@ const DisplayGitHub = () => {
 
     return (
         <div className=" px-4 sm:w-2/3 md:w-1/2 lg:w-2/5 border-2 border-slate-200 rounded-md">
-            <div className="mt-5">
+            <div className="mt-5 flex flex-row gap-5">
+                < DiGithubBadge className="text-3xl"/>
                 <h2 className="font-serif text-xl underline decoration-yellow-500 font-semibold mb-4">GitHub Public Repositories</h2>
             </div>
             <div className="my-5">
