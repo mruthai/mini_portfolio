@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HeadShot = ({ src, alt }) => {
+const Image = ({ src, alt }) => {
   return (
     <div >
       
@@ -15,4 +15,4 @@ const HeadShot = ({ src, alt }) => {
   )
 }
 
-export default HeadShot
+export default Image

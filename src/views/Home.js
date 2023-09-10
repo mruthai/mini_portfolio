@@ -4,7 +4,7 @@ import DataProvider from '../contexts/DataProvider';
 import NavBar from '../components/NavBar/NavBar';
 import Footer from '../components/Footer/Footer';
 import Credentials from '../components/Credentials/Credentials';
-import HeadShot from '../components/HeadShot/HeadShot';
+import HeadShot from '../components/Media/Image';
 import images from '../constants/images';
 import TechStack from '../components/TechStack/TechStack';
 import 'tailwindcss/tailwind.css';
