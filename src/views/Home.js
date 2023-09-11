@@ -4,10 +4,11 @@ import DataProvider from '../contexts/DataProvider';
 import NavBar from '../components/NavBar/NavBar';
 import Footer from '../components/Footer/Footer';
 import Credentials from '../components/Credentials/Credentials';
-import HeadShot from '../components/Media/Image';
-import images from '../constants/images';
 import TechStack from '../components/TechStack/TechStack';
+import Image from '../components/Media/Image';
+import images from '../constants/images';
 import 'tailwindcss/tailwind.css';
+
 
 const Home = () => {
 
@@ -20,7 +21,7 @@ const Home = () => {
       </div>
       <div className="flex flex-row justify-around gap-10 lg:px-32 my-10 ">
         <div className=" my-5">
-          <HeadShot src={images.head_shotTwo} alt="My Headshot" className="scale-150 mx-3 sm:w-20" />
+          <Image src={images.head_shotTwo} alt="My Headshot" className="scale-150 mx-3 sm:w-20" />
         </div>
         <div className="flex flex-col justify-center lg:px-10 md:px-5 sm:px-3 ">
           <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-cyan-500 to-lime-400 to-90% ">
@@ -35,7 +36,7 @@ const Home = () => {
       <div>
         <TechStack />
       </div>
-      <div className="flex flex-col justify-between p-5 sm:flex-row  sm:justify-evenly space-y-5 sm:space-y-0 sm:space-x-10">
+      <div className="flex flex-row p-5 sm:flex-row  sm:justify-evenly sm:space-y-0 sm:space-x-10">
         <Credentials />
         <DataProvider>
           <DisplayGitHub />

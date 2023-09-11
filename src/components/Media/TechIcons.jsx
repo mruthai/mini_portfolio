@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Icon = ({src, alt}) => {
+const TechIcons = ({src, alt}) => {
   return (
     <>
      <img
       src={src}
       alt={alt}
+      className="h-8 w-8"
       
     />
 
@@ -13,4 +14,4 @@ const Icon = ({src, alt}) => {
   )
 }
 
-export default Icon
+export default TechIcons
