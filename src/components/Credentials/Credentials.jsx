@@ -26,35 +26,35 @@ const Credentials = () => {
             </div>
             <div className="mt-8 space-y-6">
                 <div>
-                    <h3 className="text-gray-500">Contract</h3>
+                    <h3 className="text-gray-500 text-sm md:text-lg">Contract</h3>
                     <div className="flex  justify-between">
-                        <p className="text-sm">Full Stack Software Developer</p>
-                        <p className="text-gray-400 text-sm">2020 - Present</p>
+                        <p className="md:text-sm text-xs">Full Stack Software Developer</p>
+                        <p className="text-gray-400 md:text-sm text-xs">2020 - Present</p>
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-gray-500">Synthesis</h3>
+                    <h3 className="text-gray-500 text-sm md:text-lg">Synthesis</h3>
                     <div className="flex  justify-between">
-                        <p className="text-sm">Learning Facilitator</p>
-                        <p className="text-gray-400 text-sm">2021 - 2023</p>
+                        <p className="md:text-sm text-xs">Learning Facilitator</p>
+                        <p className="text-gray-400 md:text-sm text-xs">2021 - 2023</p>
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-gray-500">Ruamrudee International School</h3>
+                    <h3 className="text-gray-500 text-sm md:text-lg">Ruamrudee International School</h3>
                     <div className="flex  justify-between">
-                        <p className="text-sm">Design Technology Teacher</p>
-                        <p className="text-gray-400 text-sm">2017 - 2020</p>
+                        <p className="md:text-sm text-xs">Design Technology Teacher</p>
+                        <p className="text-gray-400 md:text-sm text-xs">2017 - 2020</p>
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-gray-500">Shekou International School</h3>
+                    <h3 className="text-gray-500 text-sm md:text-lg">Shekou International School</h3>
                     <div className="flex  justify-between">
-                        <p className="text-sm">Learning Innovation Coach</p>
-                        <p className="text-gray-400 text-sm">2012 - 2017</p>
+                        <p className="md:text-sm text-xs">Learning Innovation Coach</p>
+                        <p className="text-gray-400 md:text-sm text-xs">2012 - 2017</p>
                     </div>
                 </div>
             </div>
-            <div className="my-5">
+            <div className="my-10">
                 <button className="rounded-md bg-blue-500 text-white py-3 px-6 " onClick={onButtonClick}>
                     Download Resumé
                 </button>

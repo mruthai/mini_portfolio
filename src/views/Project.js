@@ -11,7 +11,7 @@ const Project = () => {
       <NavBar />
       </div>
       <div>
-      <h1 className="font-serif ml-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">Current Developements</h1>
+      <h1 className="font-serif mt-5 ml-5 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">Current Developements</h1>
       </div>
       <div>
         <Section1 />
