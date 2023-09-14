@@ -1,6 +1,7 @@
 import bootstrap from '../assets/Icons/bootstrap.svg';
 import css3 from '../assets/Icons/css3.svg';
 import django from '../assets/Icons/django.svg';
+import express_icon from '../assets/Icons/express_icon.svg';
 import firebase from '../assets/Icons/firebase.svg';
 import flask from '../assets/Icons/flask.svg';
 import git from '../assets/Icons/git.svg';
@@ -23,6 +24,7 @@ export default {
     bootstrap,
     css3,
     django,
+    express_icon,
     firebase,
     flask,
     git,

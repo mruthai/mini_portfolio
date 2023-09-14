@@ -6,34 +6,47 @@ import { ImStack } from 'react-icons/im'
 
 const TechStack = () => {
     return (
-        <div>
-              <strong className="font-serif text-xl underline decoration-yellow-500 font-bold mb-4 flex flex-row ml-32 gap-6">
-                    < ImStack /> Tech Stack
-                </strong>
-        <div className="flex justify-center">
-            <div className="grid grid-cols-10 gap-16">
-                <TechIcons src={devIcons.bootstrap} alt="bootstrap" />
-                <TechIcons src={devIcons.css3} alt="css3" />
-                <TechIcons src={devIcons.django} alt="django" />
-                <TechIcons src={devIcons.firebase} alt="firebase" />
-                <TechIcons src={devIcons.flask} alt="flask" />
-                <TechIcons src={devIcons.git} alt="github" />
-                <TechIcons src={devIcons.github} alt="github" />
-                <TechIcons src={devIcons.graphql} alt="graphql" />
-                <TechIcons src={devIcons.html5} alt="html5" />
-                <TechIcons src={devIcons.javascript} alt="javascript" />
-                <TechIcons src={devIcons.mongodb} alt="mongodb" />
-                <TechIcons src={devIcons.nextjs} alt="nextjs" />
-                <TechIcons src={devIcons.nodejs} alt="node" />
-                <TechIcons src={devIcons.npm} alt="npm" />
-                <TechIcons src={devIcons.postgresql} alt="postgresql" />
-                <TechIcons src={devIcons.python} alt="python" />
-                <TechIcons src={devIcons.react_icon} alt="react icon" />
-                <TechIcons src={devIcons.sqlalchemy} alt="sqlalchemy" />
-                <TechIcons src={devIcons.tailwindcss} alt="tailwindcss" />
-                <TechIcons src={devIcons.vscode} alt="vscode" />
+        <div className="mt-5">
+            <strong className="font-serif text-xl underline decoration-yellow-500 font-bold mb-10 flex flex-row gap-6">
+                < ImStack /> Tech Stack
+            </strong>
+
+            <div className="flex flex-row  my-5 gap-10">
+                <div className="space-y-10">
+                    <TechIcons src={devIcons.flask} alt="flask" link="https://flask.palletsprojects.com/en/2.3.x/" />
+                    <TechIcons src={devIcons.git} alt="github" link="https://git-scm.com/"/>
+                    <TechIcons src={devIcons.github} alt="github" link="https://github.com/"/>
+                    <TechIcons src={devIcons.graphql} alt="graphql" link="https://graphql.org/" />
+
+                </div>
+                <div className="space-y-10">
+                    <TechIcons src={devIcons.javascript} alt="javascript" link="https://developer.mozilla.org/en-US/docs/Web/JavaScript"/>
+                    <TechIcons src={devIcons.mongodb} alt="mongodb" link="https://www.mongodb.com/"/>
+                    <TechIcons src={devIcons.nodejs} alt="node" link="https://nodejs.org/en"/>
+                    <TechIcons src={devIcons.npm} alt="npm" link="https://www.npmjs.com/"/>
+
+                </div>
+                <div className="space-y-10">
+                    <TechIcons src={devIcons.bootstrap} alt="bootstrap" link="https://getbootstrap.com/"/>
+                    <TechIcons src={devIcons.css3} alt="css3" link="https://www.w3.org/Style/CSS/"/>
+                    <TechIcons src={devIcons.django} alt="django" link="https://www.djangoproject.com/"/>
+                    <TechIcons src={devIcons.express_icon} alt="express" link="https://expressjs.com/"/>
+
+                </div>
+                <div className="space-y-10">
+                    <TechIcons src={devIcons.python} alt="python" link="https://www.python.org/"/>
+                    <TechIcons src={devIcons.react_icon} alt="react icon" link="https://react.dev/"/>
+                    <TechIcons src={devIcons.sqlalchemy} alt="sqlalchemy" link="https://www.sqlalchemy.org/"/>
+                    <TechIcons src={devIcons.tailwindcss} alt="tailwindcss" link="https://tailwindcss.com/"/>
+                </div>
+                <div className="space-y-10">
+                    <TechIcons src={devIcons.html5} alt="html5" link="https://www.w3schools.com/html/"/>
+                    <TechIcons src={devIcons.postgresql} alt="postgresql" link="https://www.postgresql.org/"/>
+                    <TechIcons src={devIcons.firebase} alt="firebase" link="https://firebase.google.com/"/>
+                    <TechIcons src={devIcons.vscode} alt="vscode" link="https://code.visualstudio.com/" />
+            
+                </div>
             </div>
-        </div>
         </div>
     )
 }

@@ -19,7 +19,7 @@ const Home = () => {
       <div className="bg-slate-100 ">
         <NavBar />
       </div>
-      <div className="flex flex-row justify-around gap-10 lg:px-32 my-10 ">
+      <div className="flex lg:flex-row md:flex-row sm:flex-col justify-around gap-10 lg:px-32 my-10 ">
         <div className=" my-5">
           <Image src={images.head_shotTwo} alt="My Headshot" className="scale-150 mx-3 sm:w-20" />
         </div>
@@ -33,15 +33,24 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div>
-        <TechStack />
+      <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row-reverse justify-around">
+        <div className="sm:w-2/3 md:w-1/2 lg:w-1/2 space-y-5">
+          <div className="px-5 border-2 border-slate-200 rounded-md">
+            <Credentials />
+          </div>
+          <div className="px-5 border-2 border-slate-200 rounded-md">
+            <TechStack />
+          </div>
+        </div>
+        <div className="sm:w-2/3 md:w-1/3 lg:w-1/3 ml-0 sm:ml-32">
+          <div className="px-5">
+            <DataProvider>
+              <DisplayGitHub />
+            </DataProvider>
+          </div>
+        </div>
       </div>
-      <div className="flex flex-row p-5 sm:flex-row  sm:justify-evenly sm:space-y-0 sm:space-x-10">
-        <Credentials />
-        <DataProvider>
-          <DisplayGitHub />
-        </DataProvider>
-      </div>
+
       <Footer />
     </div>
   );
@@ -50,3 +59,4 @@ const Home = () => {
 
 
 export default Home
+

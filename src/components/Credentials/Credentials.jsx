@@ -18,7 +18,7 @@ const Credentials = () => {
     }
 
     return (
-        <div className="px-5 sm:w-2/3 md:w-1/2 lg:w-2/5 border-2 border-slate-200 rounded-md">
+        <div>
             <div className="mt-5 ">
                 <strong className="font-serif text-xl underline decoration-yellow-500 font-bold mb-4 flex flex-row gap-6">
                     < GoBriefcase /> Work History

@@ -9,7 +9,7 @@ const NavBar = () => {
   };
 
   return (
-<nav className={`py-5  p-5 ${menuOpen ? 'bg-white' : ''}`}>
+<nav className={`py-5  p-5 ${menuOpen ? 'bg-gray-400' : ''}`}>
   <div>
     <div className="flex justify-between items-center">
       <button
@@ -24,7 +24,7 @@ const NavBar = () => {
         menuOpen
           ? 'flex justify-evenly items-center' // Center the divs
           : 'hidden'
-      } md:flex flex-row justify-center justfiy-content  md:space-y-0 md:space-x-4 mt-1 md:mt-0`}
+      } md:flex flex-row justify-center justfiy-content md:space-y-0 md:space-x-4 mt-1 md:mt-0 border-radius rounded-md`}
     >
       <div className="text-#0a0a0a hover:text-blue-700">
         <Link to="/">Home</Link>
