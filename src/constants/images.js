@@ -1,9 +1,12 @@
 import osc_black from '../assets/Images/osc_black.png';
 import headshot from '../assets/Images/headshot.png';
 import head_shotTwo from '../assets/Images/head_shotTwo.png';
+import logo from '../assets/Images/logo.svg';
 
 export default {
     osc_black,
     headshot,
-    head_shotTwo
+    head_shotTwo,
+    logo,
+    
 }

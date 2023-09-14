@@ -16,15 +16,15 @@ const Home = () => {
 
   return (
     <div className="bg-slate-50 ">
-      <div className="bg-slate-100 ">
+      <div>
         <NavBar />
       </div>
-      <div className="flex md:flex-row flex-col justify-around gap-10 lg:px-32 my-10 ">
-        <div className=" my-5">
-          <Image src={images.head_shotTwo} alt="My Headshot" className="scale-150 mx-3 sm:w-20" />
+      <div className="flex flex-col md:flex-row justify-center items-center md:w-2/3 lg:px-10 md:px-5 sm:px-3 md:h-screen ">
+        <div className="md:w-1/3 my-5 flex justify-center">
+          <Image src={images.head_shotTwo} alt="My Headshot"  />
         </div>
-        <div className="flex flex-col justify-center lg:px-10 md:px-5 sm:px-3 ">
-          <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl md:mx-0 mx-5 font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-cyan-500 to-lime-400 to-90% ">
+        <div className="md:w-2/3 flex-col justify-center">
+          <h1 className="font-titles text-2xl sm:text-3xl md:text-4xl lg:text-5xl md:mx-0 mx-5 font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-cyan-500 to-lime-400 to-90% ">
             Full stack software developer
           </h1>
           <p className="my-2 md:mx-0 mx-5 font-bold">I strive to foster an environment where creative innovation empowers open-minded thinkers to revolutionize the landscape of technology development.</p>
@@ -33,12 +33,12 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row-reverse justify-around">
+      <div className="flex flex-col  md:flex-row-reverse justify-around px-3 md:h-auto">
         <div className="sm:w-2/3 sm:p-2 md:w-1/2 lg:w-1/2 space-y-5">
-          <div className="px-5 md:w-2/3 md:mx-0 mx-3 border-2 border-slate-200 rounded-md">
+          <div className="px-5 md:w-2/3 md:mx-0 mx-1 border-2 border-slate-200 rounded-md">
             <Credentials />
           </div>
-          <div className="px-5 md:w-2/3 md:mx-0 mx-3 border-2 border-slate-200 rounded-md">
+          <div className="px-5 md:w-2/3 md:mx-0 mx-1 border-2 border-slate-200 rounded-md">
             <TechStack />
           </div>
         </div>
@@ -50,8 +50,9 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      <div className="md:h-auto">
       <Footer />
+      </div>
     </div>
   );
 };

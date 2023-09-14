@@ -20,6 +20,7 @@ import sqlalchemy from '../assets/Icons/sqlalchemy.svg';
 import tailwindcss from '../assets/Icons/tailwindcss.svg';
 import vscode from '../assets/Icons/vscode.svg';
 
+
 export default {
     bootstrap,
     css3,
