@@ -9,13 +9,12 @@ import Project from './views/Project';
 function App() {
 
   return (
-    <>
+    <div className="relative bg-slate-50">
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
-        <Route path="/project" element={<Project />} />
+        <Route path="Projects" element={<Project />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

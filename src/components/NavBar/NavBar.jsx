@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Image from '../../components/Media/Image'
+import images from '../../constants/images'
+import { BiMenu, BiX } from 'react-icons/bi'
+
 
 
 const NavBar = () => {
@@ -10,37 +13,37 @@ const NavBar = () => {
   };
 
   return (
-<nav className={`py-5  p-5 ${menuOpen ? 'bg-gray-400' : ''}`}>
-  <div>
-    <div className="flex justify-between items-center">
-      <button
-        className="md:hidden text-#0a0a0a hover:text-blue-700"
-        onClick={toggleMenu}
-      >
-        {menuOpen ? 'Close' : 'Menu'}
-      </button>
-    </div>
-    <div
-      className={`${
-        menuOpen
-          ? 'flex justify-evenly items-center' // Center the divs
-          : 'hidden'
-      } md:flex flex-row justify-center justfiy-content md:space-y-0 md:space-x-4 mt-1 md:mt-0 border-radius rounded-md`}
+    <nav
+      className={`py-5 p-5 ${menuOpen ? 'bg-slate-200 border-b-2 border-slate-300' : 'bg-slate-200 border-b-2 border-slate-300'}`}
     >
-      <div className="text-#0a0a0a hover:text-blue-700">
-        <Link to="/">Home</Link>
+      <div className="flex md:flex-row flex-col md:items-center">
+        <div className="flex md:flex-row md:w-2/5 md:gap-0 gap-1 md:px-10 items-center">
+          <Image
+            src={images.logo}
+            alt="logo"
+            imgClassName="md:w-15 w-7"
+          />
+          <h1 className="font-bold md:text-2xl text-xl">Martin Ruthaivilavan</h1>
+        </div>
+        <div className="md:hidden absolute top-0 right-0 m-4 p-2">
+          <button
+            className="flex md:flex-row flex-col text-#0a0a0a hover:text-blue-700"
+            onClick={toggleMenu}
+          >
+            {menuOpen ? <button><BiX size={24} /> </button> : <button><BiMenu size={24} /> </button>}
+          </button>
+        </div>
+        <div
+          className={`${
+            menuOpen
+              ? 'flex md:flex-row flex-col justify-center items-center' // Center the links
+              : 'hidden'
+          } md:flex flex-row justify-center justfiy-content md:space-y-0 md:space-x-4 mt-1 md:mt-0 border-radius rounded-md`}>
+            <a className="text-#0a0a0a hover:text-blue-700" href="/" alt="home">Home</a>
+            <a className="text-#0a0a0a hover:text-blue-700" href="/#projects" alt="projects">Projects</a>
+        </div>
       </div>
-      {/* <li className="text-#0a0a0a hover:text-blue-700">
-        <Link to="/about">About</Link>
-      </li> */}
-      <div className="text-#0a0a0a hover:text-blue-700">
-        <Link to="/project">Projects</Link>
-      </div>
-    </div>
-  </div>
-</nav>
-
-
+    </nav>
   );
 };
 

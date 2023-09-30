@@ -4,6 +4,7 @@ import DataProvider from '../contexts/DataProvider';
 import NavBar from '../components/NavBar/NavBar';
 import Footer from '../components/Footer/Footer';
 import Credentials from '../components/Credentials/Credentials';
+import Section1 from '../components/Section/Section1';
 import TechStack from '../components/TechStack/TechStack';
 import Image from '../components/Media/Image';
 import images from '../constants/images';
@@ -15,13 +16,17 @@ const Home = () => {
 
 
   return (
-    <div className="bg-slate-50 ">
-      <div>
+    <div className=" mx-auto min-h-screen max-w-screen-xl bg-slate-50 ">
         <NavBar />
-      </div>
-      <div className="flex flex-col md:flex-row justify-center items-center md:w-2/3 lg:px-10 md:px-5 sm:px-3 md:h-screen ">
+      <div className="flex flex-col md:flex-row justify-center items-center md:w-2/3 lg:px-10 md:px-5 sm:px-3 md:my-20 ">
+        <div className="color-"></div>
         <div className="md:w-1/3 my-5 flex justify-center">
-          <Image src={images.head_shotTwo} alt="My Headshot"  />
+          <Image 
+          src={images.head_shotTwo} 
+          alt="My Headshot "  
+          imgClassName="animate-pulse"
+          
+          />
         </div>
         <div className="md:w-2/3 flex-col justify-center">
           <h1 className="font-titles text-2xl sm:text-3xl md:text-4xl lg:text-5xl md:mx-0 mx-5 font-semibold  text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 from-10% via-cyan-500 to-lime-400 to-90% ">
@@ -49,6 +54,9 @@ const Home = () => {
             </DataProvider>
           </div>
         </div>
+      </div>
+      <div id="projects" className="md:mx-32">
+        <Section1/>
       </div>
       <div className="md:h-auto">
       <Footer />
