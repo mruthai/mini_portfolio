@@ -15,7 +15,7 @@ const Home = () => {
 
 
   return (
-    <div className=" mx-auto min-h-screen max-w-screen-xl bg-slate-50 ">
+    <div className=" mx-auto min-h-screen  bg-slate-50 ">
         <NavBar />
       <div className="flex flex-col md:flex-row justify-center items-center md:w-2/3 lg:px-10 md:px-5 sm:px-3 md:my-20 ">
         <div className="color-"></div>

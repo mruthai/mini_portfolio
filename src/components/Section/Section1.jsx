@@ -51,7 +51,7 @@ const Section1 = () => {
           </div>
           <div className="mt-10 flex md:flex-row flex-col justify-around my-15">
 
-            <img className="w-40" src={images.dhlogo} alt="img" />
+            <img className="w-20" src={images.dhlogo} alt="img" />
             <ButtonOne url="https://decision-harvest.netlify.app/" buttonText="Visit Decision Harvest" />
             <DataProvider>
               <DisplayGitHub2 />
