@@ -3,7 +3,6 @@ import './App.css';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './views/Home';
-// import About from './views/About';
 import Project from './views/Project';
 
 function App() {

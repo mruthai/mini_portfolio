@@ -14,7 +14,6 @@ import 'tailwindcss/tailwind.css';
 const Home = () => {
 
 
-
   return (
     <div className=" mx-auto min-h-screen max-w-screen-xl bg-slate-50 ">
         <NavBar />
