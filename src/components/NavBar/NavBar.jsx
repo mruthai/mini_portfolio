@@ -36,7 +36,9 @@ const NavBar = () => {
             } md:flex flex-row justify-center justfiy-content md:space-y-0 md:space-x-4 mt-1 md:mt-0 border-radius rounded-md`}>
           <a className="text-#0a0a0a hover:text-blue-700" href="/" alt="home">Home</a>
           <a className="text-#0a0a0a hover:text-blue-700" href="/#projects" alt="projects">Projects</a>
-          <a className="text-#0a0a0a hover:text-blue-700" href="/#techStack" alt="projects">Tech Stack</a>
+          <a className="text-#0a0a0a hover:text-blue-700" href="/#workhistory" alt="workhistory">Work History</a>
+          <a className="text-#0a0a0a hover:text-blue-700" href="/#repository" alt="repository">Repositories</a>
+          <a className="text-#0a0a0a hover:text-blue-700" href="/#techstack" alt="techstack">Tech Stack</a>
         </div>
       </div>
     </nav>

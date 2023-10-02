@@ -41,18 +41,17 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <div id="repository">
+
       <DataProvider>
         <DisplayGitHub />
       </DataProvider>
+      </div>
+      <div id="workhistory">
 
-
-      
-   
         <WorkHistory />
-
-      
-      <div classname="w-full">
-
+      </div>
+      <div id="techstack">
         <TechStack />
       </div>
 
