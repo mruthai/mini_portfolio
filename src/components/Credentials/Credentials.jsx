@@ -20,8 +20,8 @@ const Credentials = () => {
     return (
         <div>
             <div className="mt-5 ">
-                <strong className="font-serif text-xl underline decoration-yellow-500 font-bold mb-4 flex flex-row gap-6">
-                    < GoBriefcase /> Work History
+                <strong className="font-serif text-2xl underline decoration-yellow-500 font-bold mb-4 flex flex-row  items-center gap-6">
+                    < GoBriefcase className="flex items-center"/> Work History
                 </strong>
             </div>
             <div className="mt-8 space-y-6">
@@ -55,7 +55,7 @@ const Credentials = () => {
                 </div>
             </div>
             <div className="my-10">
-                <button className="rounded-md bg-blue-500 text-white py-3 px-6 " onClick={onButtonClick}>
+                <button className=" hover:bg-amber-300 hover:text-black bg-blue-500 text-white py-3 px-6 " onClick={onButtonClick}>
                     Download Resumé
                 </button>
             </div>

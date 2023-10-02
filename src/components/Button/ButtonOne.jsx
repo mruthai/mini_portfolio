@@ -7,7 +7,7 @@ const ButtonOne = ({url, buttonText}) => {
     
       return (
         <div className="mt-3">
-        <button className="rounded-full bg-blue-500 text-white py-3 px-6 rounded-md" onClick={handleClick}>
+        <button className="hover:bg-orange-300 bg-blue-500 hover:text-black text-white py-3 px-6" onClick={handleClick}>
           {buttonText}
         </button>
         </div>

@@ -17,7 +17,7 @@ const DisplayGitHub = () => {
         <div>
             <div className="mt-5 flex flex-row gap-5">
                 < DiGithubBadge className="text-3xl"/>
-                <h2 className="font-serif text-xl underline decoration-yellow-500 font-semibold mb-4">GitHub Public Repositories</h2>
+                <h2 className="font-serif text-2xl underline decoration-yellow-500 font-semibold mb-4">GitHub Public Repositories</h2>
             </div>
             <div className="my-5">
                 <p>In this section, several of my GitHub repositories showcase the skills I have learned and Coding Temple's software development boot camp- including how to access data through an API. The information below, the title, the date, the language used, and the repository link are from GitHub's API. </p>
