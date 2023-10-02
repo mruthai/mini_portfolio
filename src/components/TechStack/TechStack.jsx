@@ -6,7 +6,7 @@ import { ImStack } from 'react-icons/im'
 
 const TechStack = () => {
     return (
-        <div className="mt-5">
+        <div className="mt-5 ">
             <strong className="font-serif text-xl underline decoration-yellow-500 font-bold mb-10 flex flex-row gap-6">
                 < ImStack /> Tech Stack
             </strong>

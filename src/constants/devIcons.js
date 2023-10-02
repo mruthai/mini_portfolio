@@ -21,7 +21,7 @@ import tailwindcss from '../assets/Icons/tailwindcss.svg';
 import vscode from '../assets/Icons/vscode.svg';
 
 
-export default {
+const DevIcons ={
     bootstrap,
     css3,
     django,
@@ -45,3 +45,4 @@ export default {
     vscode,
 
 }
+export default DevIcons;

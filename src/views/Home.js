@@ -16,12 +16,12 @@ const Home = () => {
 
 
   return (
-    <div className="">
+    <div className="min-h-screen">
     
 
       
         <NavBar />
-      <div className="flex flex-col md:flex-row justify-center items-center sm:px-3 md:my-20 my-10 ">
+      <div className="flex flex-col md:flex-row justify-center items-center sm:px-3 md:my-48 my-10 ">
         <div className="md:w-48 md:mr-32 my-5">
           <Image 
           src={images.head_shotTwo} 
@@ -40,24 +40,23 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col  md:flex-row-reverse justify-around px-3 md:h-auto">
-        <div className="sm:w-2/3 sm:p-2 md:w-1/2 lg:w-1/2 space-y-5">
-          <div className="px-5 md:w-2/3 md:mx-0 mx-1 ">
-            <Credentials />
-          </div>
-          <div id="techStack" className="px-5 md:w-2/3 md:mx-0 mx-1 border-2 border-slate-200 rounded-md">
-            <TechStack />
-          </div>
-        </div>
-        <div className="sm:w-2/3 md:w-1/3 lg:w-1/3 ml-0 sm:ml-32">
-          <div className="px-5">
             <DataProvider>
               <DisplayGitHub />
             </DataProvider>
+     
+       
+          <div className="flex md:flex-row flex-col md:mx-44 justify-evenly">
+            <div className="">
+
+            <Credentials />
+            </div>
+            <div classname="">
+
+            <TechStack />
+            </div>
           </div>
-        </div>
-      </div>
-      <div id="projects" className="md:mx-32">
+    
+      <div id="projects" className="md:mx-32 md:my-44 my-10">
         <Section1/>
       </div>
       <div className="md:h-auto">

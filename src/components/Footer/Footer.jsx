@@ -10,7 +10,7 @@ const Footer = () => {
   };
   
   return (
-    <div className="md:h-72 mb-5 bottom-0 bg-black shrink-0">
+    <div className="md:h-72  bottom-0 bg-black shrink-0">
       <div className="flex md:flex-row flex-col justify-center md:mx-0 mx-5 md:gap-20 gap-0 ">
         <div className="md:my-20 my-5 md:mx-5">
           <h2 className="font-serif text-white font-base text-2xl ">Seeking Opportunities to Collaborate</h2>
