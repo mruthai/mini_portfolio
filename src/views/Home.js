@@ -3,13 +3,14 @@ import DisplayGitHub from '../components/DisplayGitHub/DisplayGitHub';
 import DataProvider from '../contexts/DataProvider';
 import NavBar from '../components/NavBar/NavBar';
 import Footer from '../components/Footer/Footer';
-import Credentials from '../components/Credentials/Credentials';
-import Section1 from '../components/Section/Section1';
 
+import Section1 from '../components/Section/Section1';
+import WorkHistory from '../components/Credentials/WorkHistory'
 import TechStack from '../components/TechStack/TechStack';
 import Image from '../components/Media/Image';
 import images from '../constants/images';
 import 'tailwindcss/tailwind.css';
+
 
 
 const Home = () => {
@@ -17,17 +18,17 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-    
 
-      
-        <NavBar />
+
+
+      <NavBar />
       <div className="flex flex-col md:flex-row justify-center items-center sm:px-3 md:my-48 my-10 ">
         <div className="md:w-48 md:mr-32 my-5">
-          <Image 
-          src={images.head_shotTwo} 
-          alt="My Headshot "  
-          imgClassName="animate-pulse"
-          
+          <Image
+            src={images.head_shotTwo}
+            alt="My Headshot "
+            imgClassName="animate-pulse"
+
           />
         </div>
         <div className="flex flex-col md:w-3/5 md:mx-0 mx-5">
@@ -40,29 +41,28 @@ const Home = () => {
           </p>
         </div>
       </div>
-            <DataProvider>
-              <DisplayGitHub />
-            </DataProvider>
-     
-       
-          <div className="flex md:flex-row flex-col md:mx-44 justify-evenly">
-            <div className="">
+      <DataProvider>
+        <DisplayGitHub />
+      </DataProvider>
 
-            <Credentials />
-            </div>
-            <div classname="">
 
-            <TechStack />
-            </div>
-          </div>
-    
+      
+   
+        <WorkHistory />
+
+      
+      <div classname="w-full">
+
+        <TechStack />
+      </div>
+
       <div id="projects" className="md:mx-32 md:my-44 my-10">
-        <Section1/>
+        <Section1 />
       </div>
       <div className="md:h-auto">
-      <Footer />
+        <Footer />
       </div>
-      
+
     </div>
   );
 };
