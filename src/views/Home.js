@@ -18,8 +18,9 @@ const Home = () => {
   return (
     <>
       <NavBar />
+      
       <div className="flex flex-col md:flex-row justify-center items-center sm:px-3 md:my-48 my-10 ">
-        <div className="md:w-48 md:mr-32 my-5">
+        <div className="md:w-48 md:mr-32 my-5 z-0 relative">
           <Image
             src={images.head_shotTwo}
             alt="My Headshot "
@@ -53,7 +54,12 @@ const Home = () => {
       </div>
 
       <div id="projects" className="md:mx-32 md:my-44 my-10">
-        <Section1 />
+        <DataProvider>
+
+        <Section1 
+      
+        />
+        </DataProvider>
       </div>
       <div className="md:h-auto">
         <Footer />

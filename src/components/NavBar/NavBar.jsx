@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className={`sticky top-0 py-5 p-5 ${menuOpen ? 'bg-white' : 'bg-white'}`}>
+    <nav className={`sticky top-0 py-5 p-5 ${menuOpen ? 'bg-white' : 'bg-white'} z-10`}>
       <div className="flex md:flex-row flex-col md:items-center">
         <div className="flex md:flex-row md:w-2/5 md:gap-2 gap-1 md:px-32 items-center">
           <Image

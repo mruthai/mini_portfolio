@@ -3,6 +3,17 @@ import { GoBriefcase } from 'react-icons/go';
 
 
 const WorkHistory = () => {
+  // state variable is declared we set the state to null.
+  // The usestate hook keeps track of which job is currently expanded in the browser or collapsed showing no details. 
+  // NULL means that no section is expanded.
+    const [expandedSection, setExpandedSection] = useState(null);
+  
+  // Arrow function -> when the user clicks on a job which is indexed, it will expand the section revealing details of the job. 
+    const toggleExpansion = (index) => {
+      setExpandedSection(index === expandedSection ? null : index );
+    };
+
+  // Array containing object rep - position, company, date of work, and description or details. 
   const workHistory = [
     {
       position: 'Full Stack Software Developer ',
@@ -29,12 +40,6 @@ const WorkHistory = () => {
       details: '• Led a school-wide initiative called AMPed based on the principles of intrinsic motivation.',
     },
   ];
-
-  const [expandedSection, setExpandedSection] = useState(null);
-
-  const toggleExpansion = (index) => {
-    setExpandedSection(index === expandedSection ? null : index );
-  };
 
   return (
     <div className="md:my-40  md:mx-44 flex flex-col justify-center">

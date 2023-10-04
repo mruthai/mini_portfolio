@@ -1,5 +1,6 @@
-import React from 'react'
-import { BsLinkedin, BsTwitter, BsGithub, BsFillEnvelopeFill } from 'react-icons/bs'
+import React from 'react';
+import { BsLinkedin, BsGithub, BsFillEnvelopeFill } from 'react-icons/bs';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
   const emailAddress = 'mmvilavan@gmail.com';
@@ -19,7 +20,7 @@ const Footer = () => {
         <div className="flex flex-col  gap-5 md:my-20 my-5">
           <h3 className="text-white font-bold">Follow me</h3>
           <a className="text-white flex flex-row gap-3 text-sm" href="https://www.linkedin.com/in/martin-ruthaivilavan/" target="_blank" rel="noopener noreferrer"> <BsLinkedin color={'white'} size={20} /> LinkedIn</a>
-          <a className="text-white flex flex-row gap-3 text-sm"  href="https://www.linkedin.com/in/martin-ruthaivilavan/" target="_blank" rel="noopener noreferrer"> <BsTwitter color={'white'} size={20} />X formerly Twitter</a>
+          <a className="text-white flex flex-row gap-3 text-sm"  href="https://www.linkedin.com/in/martin-ruthaivilavan/" target="_blank" rel="noopener noreferrer"> <FaXTwitter color={'white'} size={20} />X formerly Twitter</a>
         </div>
         <div className="flex flex-col  gap-5 md:my-20 my-5">
           <h3 className="text-white font-bold">Repositories</h3>

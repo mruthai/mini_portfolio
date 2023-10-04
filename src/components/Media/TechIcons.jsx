@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TechIcons = ({src, alt, link, imgClass}) => {
+const TechIcons = ({src, alt, link}) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
      <img
