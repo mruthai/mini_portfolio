@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { GoBriefcase } from 'react-icons/go';
 
 
 const WorkHistory = () => {
   const workHistory = [
     {
-      position: 'Full Stack Software Developer',
+      position: 'Full Stack Software Developer ',
       company: 'Contract',
       date: '2020 - Present',
       details: '• Led the development of quality website products and web applications for clients with constrained budgets',
@@ -33,13 +33,13 @@ const WorkHistory = () => {
   const [expandedSection, setExpandedSection] = useState(null);
 
   const toggleExpansion = (index) => {
-    setExpandedSection(index === expandedSection ? null : index);
+    setExpandedSection(index === expandedSection ? null : index );
   };
 
   return (
-    <div  className="md:my-40 my-56 md:mx-44 flex flex-col justify-center">
+    <div className="md:my-40  md:mx-44 flex flex-col justify-center">
       <div className="mb-12">
-        <strong className="font-serif text-2xl underline decoration-yellow-500 font-bold mb-4 flex items-center flex-row gap-6">
+        <strong className="font-serif text-2xl md:mx-0 mx-5 underline decoration-yellow-500 font-bold mb-4 flex items-center flex-row gap-6">
           <GoBriefcase /> Work History
         </strong>
       </div>
@@ -47,23 +47,27 @@ const WorkHistory = () => {
         {workHistory.map((job, index) => (
           <div className="relative w-80" key={index}>
             <h3
-              className="text-gray-950 text-sm md:text-lg font-bold cursor-pointer "
+              className="flex flex-row text-gray-950 md:text-lg font-bold cursor-pointer gap-2 "
               onClick={() => toggleExpansion(index)}>{job.position}
+              <span className="relative flex h-3 w-3">
+                <span className="animate-bounce absolute inline-flex h-full w-full "> ↓</span>
+              </span>
             </h3>
-            
-            {expandedSection === index && (
-              <div className="absolute w-80 top-8 flex flex-row gap-10 my-2  bg-amber-100  ">
-                <p className="md:text-sm text-xs">{job.company}</p>
-                <p className="text-gray-400 md:text-sm text-xs">{job.date}</p>
-              </div>
-            )}
-            {expandedSection === index && (
-              <p className="absolute top-16  bg-amber-100 text-gray-500 text-sm ">
-                {job.details}
-              </p>
-            )}
+
+            <div className="relative">
+              {expandedSection === index && (
+                <div className="absolute w-80 top-2 flex flex-row gap-10">
+                  <p className="md:text-sm text-xs">{job.company}</p>
+                  <p className="text-gray-400 md:text-sm text-xs">{job.date}</p>
+                </div>
+              )}
+              {expandedSection === index && (
+                <p className="absolute top-10   text-gray-500 text-sm ">
+                  {job.details}
+                </p>
+              )}
             </div>
-          
+          </div>
         ))}
       </div>
     </div>

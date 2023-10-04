@@ -1,12 +1,12 @@
 import React from 'react'
 
-const TechIcons = ({src, alt, link}) => {
+const TechIcons = ({src, alt, link, imgClass}) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
      <img
       src={src}
       alt={alt}
-      className="h-8 w-8"
+      className="md:h-10 md:w-10 h-8 w-8"
       
     />
 

@@ -6,12 +6,12 @@ import { ImStack } from 'react-icons/im'
 
 const TechStack = () => {
     return (
-        <div className="mt-5 md:mx-40 md:my-0 my-20">
-            <strong className="font-serif text-2xl underline decoration-yellow-500 font-bold mb-10 flex flex-row gap-6">
+        <div className="md:mt-10 mt-5 md:mx-40 md:my-32 my-10">
+            <strong className="font-serif text-2xl underline decoration-yellow-500 font-bold mb-10 flex flex-row items-center gap-6 md:mx-0 mx-5">
                 < ImStack /> Tech Stack
             </strong>
 
-            <div className="flex flex-row mx-4 justify-between mb-5">
+            <div className="flex flex-row mx-4 justify-evenly md:mb-0 mb-5">
                 <div className="flex flex-col space-y-7">
                     <TechIcons src={devIcons.flask} alt="flask" link="https://flask.palletsprojects.com/en/2.3.x/" />
                     <TechIcons src={devIcons.git} alt="github" link="https://git-scm.com/"/>

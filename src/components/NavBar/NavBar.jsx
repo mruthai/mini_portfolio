@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className={`slicky top-0 py-5 p-5 ${menuOpen ? 'bg-white' : 'bg-white'}`}>
+    <nav className={`sticky top-0 py-5 p-5 ${menuOpen ? 'bg-white' : 'bg-white'}`}>
       <div className="flex md:flex-row flex-col md:items-center">
         <div className="flex md:flex-row md:w-2/5 md:gap-2 gap-1 md:px-32 items-center">
           <Image
@@ -31,7 +31,7 @@ const NavBar = () => {
         </div>
         <div
           className={`${menuOpen
-              ? 'flex md:flex-row flex-col justify-center items-center' // Center the links
+              ? 'flex md:flex-row flex-col justify-center items-center' 
               : 'hidden'
             } md:flex flex-row justify-center justfiy-content md:space-y-0 md:space-x-4 mt-1 md:mt-0 border-radius rounded-md`}>
           <a className="text-#0a0a0a hover:text-blue-700" href="/" alt="home">Home</a>

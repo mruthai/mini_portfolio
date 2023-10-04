@@ -38,9 +38,9 @@ const DisplayGitHub = () => {
                         </p>
                         <p className="text-gray-500 mt-4">Language Used: {githubData[7].language || 'N/A'}</p>
                         <a
-                            href={githubData[7].html_url} // Add the GitHub repository URL here
-                            target="_blank" // Open the link in a new tab
-                            rel="noopener noreferrer" // Add recommended security attributes for external links
+                            href={githubData[7].html_url} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
                             className="block text-blue-600 hover:underline mt-2"
                         >
                             Visit Repository ➤
@@ -67,8 +67,8 @@ const DisplayGitHub = () => {
                             <p className="text-gray-500 mt-4">Language Used: {githubData[6].language || 'N/A'}</p>
                             <a
                                 href={githubData[6].html_url}
-                                target="_blank" // Open the link in a new tab
-                                rel="noopener noreferrer" // Add recommended security attributes for external links
+                                target="_blank"
+                                rel="noopener noreferrer" 
                                 className="block text-blue-600 hover:underline mt-2"
                             >
                                 Visit Repository ➤
@@ -94,9 +94,9 @@ const DisplayGitHub = () => {
                             </p>
                             <p className="text-gray-500 mt-4">Language Used: {githubData[1].language || 'N/A'}</p>
                             <a
-                                href={githubData[1].html_url} // Add the GitHub repository URL here
-                                target="_blank" // Open the link in a new tab
-                                rel="noopener noreferrer" // Add recommended security attributes for external links
+                                href={githubData[1].html_url} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
                                 className="block text-blue-600 hover:underline mt-2"
                             >
                                 Visit Repository ➤
