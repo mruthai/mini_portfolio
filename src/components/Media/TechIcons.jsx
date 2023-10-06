@@ -6,7 +6,7 @@ const TechIcons = ({src, alt, link}) => {
      <img
       src={src}
       alt={alt}
-      className="md:h-10 md:w-10 h-8 w-8"
+      className=""
       
     />
 

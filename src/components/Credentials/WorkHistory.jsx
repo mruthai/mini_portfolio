@@ -42,13 +42,13 @@ const WorkHistory = () => {
   ];
 
   return (
-    <div className="md:my-40  md:mx-44 flex flex-col justify-center">
+    <div className="md:my-40 md:mt-0 mt-44 md:mx-44 flex flex-col justify-center ">
       <div className="mb-12">
         <strong className="font-serif text-2xl md:mx-0 mx-5 underline decoration-yellow-500 font-bold mb-4 flex items-center flex-row gap-6">
           <GoBriefcase /> Work History
         </strong>
       </div>
-      <div className="flex md:flex-row flex-col justify-between items-center md:gap-1 gap-32">
+      <div className="flex md:flex-row flex-col justify-between items-center md:gap-1 gap-32 ">
         {workHistory.map((job, index) => (
           <div className="relative w-80" key={index}>
             <h3

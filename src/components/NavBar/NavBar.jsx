@@ -16,12 +16,14 @@ const NavBar = () => {
     <nav className={`sticky top-0 py-5 p-5 ${menuOpen ? 'bg-white' : 'bg-white'} z-10`}>
       <div className="flex md:flex-row flex-col md:items-center">
         <div className="flex md:flex-row md:w-2/5 md:gap-2 gap-1 md:px-32 items-center">
+        <a href="/" alt="home">
           <Image
             src={images.logo}
             alt="logo"
             imgClassName="md:w-15 w-7"
           />
-          <h1 className="font-bold md:text-2xl text-xl">Martin Ruthaivilavan</h1>
+          </a>
+          <a href="/" alt="home" className="font-bold md:text-2xl text-xl">Martin Ruthaivilavan</a>
         </div>
         <div className="md:hidden absolute top-0 right-0 m-4 p-2">
           <button className="flex md:flex-row flex-col text-#0a0a0a hover:text-blue-700" onClick={toggleMenu}>
@@ -34,7 +36,7 @@ const NavBar = () => {
               ? 'flex md:flex-row flex-col justify-center items-center' 
               : 'hidden'
             } md:flex flex-row justify-center justfiy-content md:space-y-0 md:space-x-4 mt-1 md:mt-0 border-radius rounded-md`}>
-          <a className="text-#0a0a0a hover:text-blue-700" href="/" alt="home">Home</a>
+          
           <a className="text-#0a0a0a hover:text-blue-700" href="/#projects" alt="projects">Projects</a>
           <a className="text-#0a0a0a hover:text-blue-700" href="/#workhistory" alt="workhistory">Work History</a>
           <a className="text-#0a0a0a hover:text-blue-700" href="/#repository" alt="repository">Repositories</a>

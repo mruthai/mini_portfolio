@@ -3,6 +3,7 @@ import { BsLinkedin, BsGithub, BsFillEnvelopeFill } from 'react-icons/bs';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
+  // variable for personal email address
   const emailAddress = 'mmvilavan@gmail.com';
 
   const handleClick = () => {

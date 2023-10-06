@@ -24,8 +24,8 @@ const DisplayGitHub = () => {
             </div>
             <div className="flex md:flex-row flex-col items-center mb:mb-0 mb-10 md:gap-10 gap-0">
                 {githubData.length > 7 ? (
-                    <div className="order-2 md:w-1/3 md:mx-0 mx-5 md:py-10 py-5 ">
-                        <p className="text-gray-400 text-sm border-gray-400 border-l-2 px-1 mb-3">
+                    <div className="order-2 md:w-1/3 p-3 md:h-72 md:mx-0 mx-5 md:my-0 my-4 bg-orange-200 rounded-lg">
+                        <p className="text-gray-700 text-sm border-gray-700 border-l-2 px-1 mb-3">
                             {new Date(githubData[7].created_at).toLocaleDateString(undefined, {
                                 year: 'numeric',
                                 month: 'long',
@@ -36,7 +36,7 @@ const DisplayGitHub = () => {
                         <p className="mt-3">
                             I built application focused on the United States fishing industry. The project used Flask framework and was built with python. The User can search NOAA fishing data to learn more about fish that we consume and the location where they are found. 
                         </p>
-                        <p className="text-gray-500 mt-4">Language Used: {githubData[7].language || 'N/A'}</p>
+                        <p className="text-gray-700 mt-4">Language Used: {githubData[7].language || 'N/A'}</p>
                         <a
                             href={githubData[7].html_url} 
                             target="_blank" 
@@ -51,8 +51,8 @@ const DisplayGitHub = () => {
                 )}
              
                     {githubData.length > 6 ? (
-                        <div className="order-1 md:w-1/3 md:mx-0 mx-5 md:py-10 py-5">
-                            <p className="text-gray-400 text-sm border-gray-400 border-l-2 px-1 mb-3">
+                        <div className="order-1 md:w-1/3 md:h-72 p-3 md:mx-0 mx-5 md:my-0 my-4 bg-orange-100 rounded-lg">
+                            <p className="text-gray-700 text-sm border-gray-700 border-l-2 px-1 mb-3">
                                 {new Date(githubData[6].created_at).toLocaleDateString(undefined, {
                                     year: 'numeric',
                                     month: 'long',
@@ -64,7 +64,7 @@ const DisplayGitHub = () => {
                                 I built a Django Jewelry application to understand better how this Python framework is structured.
                                 The goal was to learn more about Django and apply that knowledge to assist with developing a custom ERP for a potential client.
                             </p>
-                            <p className="text-gray-500 mt-4">Language Used: {githubData[6].language || 'N/A'}</p>
+                            <p className="text-gray-700 mt-4">Language Used: {githubData[6].language || 'N/A'}</p>
                             <a
                                 href={githubData[6].html_url}
                                 target="_blank"
@@ -80,8 +80,8 @@ const DisplayGitHub = () => {
                 
                 
                     {githubData.length > 1 ? (
-                        <div className="order-3 md:w-1/3 md:mx-0 mx-5 md:py-10 py-5">
-                            <p className="text-gray-400 text-sm border-gray-400 border-l-2 px-1 mb-3">
+                        <div className="order-3 md:w-1/3 md:h-72 p-3 md:mx-0 mx-5 md:my-0 my-4 bg-red-200 rounded-lg">
+                            <p className="text-gray-700 text-sm border-gray-700 border-l-2 px-1 mb-3">
                                 {new Date(githubData[1].created_at).toLocaleDateString(undefined, {
                                     year: 'numeric',
                                     month: 'long',
@@ -92,7 +92,7 @@ const DisplayGitHub = () => {
                             <p>
                                 Mid-way through my boot camp I was exposed to developing an ERD to comprehend how data is stored and retrieved through the sequence query language.
                             </p>
-                            <p className="text-gray-500 mt-4">Language Used: {githubData[1].language || 'N/A'}</p>
+                            <p className="text-gray-700 mt-4">Language Used: {githubData[1].language || 'N/A'}</p>
                             <a
                                 href={githubData[1].html_url} 
                                 target="_blank" 
